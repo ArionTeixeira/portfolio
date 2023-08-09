@@ -277,4 +277,7 @@ button{
         justify-content: center;
         gap: 30px;
     }
+    p{
+        font-size: 16px;
+    }
 }
