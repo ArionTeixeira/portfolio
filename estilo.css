@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Roboto+Mono&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(36, 36, 36);
+    color: rgb(155, 100, 255);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.cabecalho{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    background: rgba(36, 36, 36, 0.562);
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.sobre{
+    height: 91vh;
+    display: flex;
+}
+
+.texto{
+    margin: 300px 300px 0 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+
+span{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+}
+
+p{
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.redes{
+    margin-top: 15px;
+    gap: 30px;
+    display: flex;
+}
+
+.icone{
+    font-size: 32px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: rgb(140, 78, 255);
+}
+
+.icone:hover:nth-child(1){
+    font-size: 40px;
+    color: rgb(243, 87, 15);
+}
+
+.icone:hover:nth-child(2){
+    font-size: 40px;
+    color: rgb(15, 87, 243);
+}
+
+.hero{
+    margin-top: 100px;
+    margin-left: 247px;
+    min-height: 70vh;
+}
+
+.portfolioTitulo{
+    font-size: 40px;
+    letter-spacing: 7px;
+}
+
+.projetoPrincipal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;  
+}
+
+.projeto{
+    background: rgb(56, 56, 56);
+    border-radius: 15px;
+    height: 350px;
+    width: 500px;
+}
+
+.descricao{
+    height: 350px;
+    width: 250px;
+    border-radius: 15px;
+    background: rgb(49, 49, 49);
+}
+
+.tituloProjeto{
+    margin: 30px 15px 0 15px;
+}
+
+.descricaoProjeto{
+    font-size: 16px;
+    margin: 20px 30px 0 15px;
+    color: rgb(192, 192, 192);
+}
+
+.linguagens{
+    margin: 25px 0 0 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.html,.css,.javascript{
+    font-size: 30px;
+}
+
+.html{
+    color: rgb(243, 87, 15);
+}
+.css{
+    color: rgb(92, 92, 238);
+}
+.javascript{
+    color: rgb(235, 235, 67);
+}
+
+.botoes{
+    margin: 25px 15px;
+    display: flex;
+    gap: 30px;
+}
+
+button{
+    height: 30px;
+    width: 80px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: rgb(140, 78, 255);
+    color: rgb(228, 228, 228);
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.containerCertificado{
+    margin-top: 40px;
+}
+
+.listaCertificado{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 1567px;
+}
+
+.item{
+    margin-top: 30px;
+    background: rgb(49, 47, 47);
+    padding: 30px 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 18px;
+}
+
+.item.item:nth-child(2n){
+    color: rgb(254, 255, 255);
+    background: none;
+}
+
+.containerfuturo{
+    width: 1000px;
+}
+
+.subfuturo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.subTitulo{
+    font-size: 32px;
+}
+
+.prox{
+    margin-top: 30px;
+    font-size: 32px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    height: 100px;
+}
+
+.sql{
+    color: rgb(243, 87, 15);
+}
+.react{
+    color: rgb(98, 140, 231);
+}
+
+@media screen and (max-width: 1200px) {
+    .cabecalho{
+        display: none;
+    }
+    .sobre{
+        height: auto;
+        text-align: center;
+    }
+    .titulo{
+        font-size: 36px;
+    }
+    .texto{
+        margin: 100px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .redes{
+        text-align: center;
+        display: block;
+    }
+    .icone{
+        margin: 20px;
+    }
+    .hero{
+        text-align: center;
+        margin-left: 0;
+        margin-top: 70px;
+        min-height: auto;
+    }
+    .projetoPrincipal{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;  
+        align-items: center;
+    } 
+    .projeto{
+        display: none;
+    }
+    .descricao{
+        height: auto;
+        width: 340px;
+    }
+    .descricaoProjeto{
+        font-size: 16px;
+        color: rgb(192, 192, 192);
+    }
+    
+    .linguagens{
+        margin: 25px 0 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .botoes{
+        margin: 25px 0;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
